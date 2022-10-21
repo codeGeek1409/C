@@ -3,5 +3,6 @@
 1.  File Program
 2.  Tic-tac-toe game
 3.  Accountant simulation
+4.  EMI calculator
 
 *by Lalatendu Choudhury*
