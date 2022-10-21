@@ -10,19 +10,19 @@ void routine_read(FILE*);
 void routine_write(FILE*);
 void routine_append(FILE*);
 
-int main(int argc, char* argv[]){
-	FILE *fp;
-	if(argc==1) exit(1);
-	if((fp=fopen(argv[1], "r"))==NULL)
+int main(int argc, char* argv[]) {
+	FILE* fp;
+	if (argc == 1) exit(1);
+	if ((fp = fopen(argv[1], "r")) == NULL)
 		printf("Error: reading %s.\n", argv[1]);
 	routine_read(fp);
 
-	if((fp=fopen(argv[1], "w"))==NULL)
+	if ((fp = fopen(argv[1], "w")) == NULL)
 		printf("Error: writing %s.\n", argv[1]);
 
 	routine_write(fp);
 
-	if((fp=fopen(argv[1], "a"))==NULL)
+	if ((fp = fopen(argv[1], "a")) == NULL)
 		printf("Error: appending %s.\n", argv[1]);
 
 	routine_append(fp);
@@ -31,15 +31,15 @@ int main(int argc, char* argv[]){
 
 
 // function definitions
-void routine_read(FILE *fp){
-	if(fclose(fp)==EOF) puts("Error: Read file not closed!");
+void routine_read(FILE* fp) {
+	if (fclose(fp) == EOF) puts("Error: Read file not closed!");
 	else puts("Read file closed.");
 }
-void routine_write(FILE *fp){
-	if(!fclose(fp)==EOF) puts("Error: Write file not closed!");
+void routine_write(FILE* fp) {
+	if (!fclose(fp) == EOF) puts("Error: Write file not closed!");
 	else puts("Write file closed.");
 }
-void routine_append(FILE *fp){
-	if(!fclose(fp)==EOF) puts("Error: Append file not closed!");
+void routine_append(FILE* fp) {
+	if (!fclose(fp) == EOF) puts("Error: Append file not closed!");
 	else puts("Append file closed.");
 }
