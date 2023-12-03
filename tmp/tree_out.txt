@@ -1,0 +1,14 @@
+Folder PATH listing for volume Drive
+Volume serial number is 0F0A:1874
+D:\SAMPLE
++---sampleD1
+|   |   sampleF1
+|   |   
+|   \---sampleD11
+|           sampleF11
+|           
+\---sampleD2
+        sampleF21
+        sampleF22
+        sampleF23
+        
