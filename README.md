@@ -5,4 +5,4 @@
 3.  Accountant simulation
 4.  EMI calculator
 
-*by Lalatendu Choudhury*
+*-codeGeek1409*
